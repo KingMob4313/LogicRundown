@@ -1,0 +1,23 @@
+﻿<Window x:Class="LogicRundown.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="248.4" Width="525">
+    <Grid Margin="0,0,0.4,-0.2" Name="backy">
+
+        <Canvas Name="LogicCanvasOne" HorizontalAlignment="Left" Height="25" Width="25" VerticalAlignment="Top"  Background="Black" Margin="485,92,0,0" />
+        <Canvas Name="LogicCanvasTwo" HorizontalAlignment="Left" Height="25" Width="25" VerticalAlignment="Top"  Background="Black" Margin="485,122,0,0" />
+        <Canvas Name="LogicCanvasThree" HorizontalAlignment="Left" Height="25" Width="25" VerticalAlignment="Top"  Background="Black" Margin="485,152,0,0">
+        </Canvas>
+        <Label Content="Number α" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" />
+        <Label Content="Number β" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,39,0,0" />
+        <TextBox  x:Name="AlphaTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" Margin="73,10,0,0" LostFocus="AlphaTextBox_LostFocus" GotFocus="AlphaTextBox_GotFocus" />
+        <TextBox  x:Name="BetaTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" Margin="73,40,0,0" LostFocus="BetaTextBox_LostFocus" GotFocus="BetaTextBox_GotFocus" />
+        <CheckBox Name="InvertLogicCheckBox" Content="Invert Logic?" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="73,73,0,0" />
+        <Label Content="Is 'α' less than 'β'?" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="380,93,0,0" />
+        <Label Content="Is divisible 'β' by 'α' ?" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="367,122,0,0" />
+        <Label Content="is 'α' to the 'β' power - higher than 200 and less than 300?" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="186,152,0,0" />
+        <Button IsEnabled="false" x:Name="CheckValuesButton" Content="Check Values" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="433,49,0,0" Click="CheckValuesButton_Click" MouseEnter="CheckValuesButton_MouseStuff" MouseLeave="CheckValuesButton_MouseStuff" />
+        <Canvas x:Name="LogicCanvasXor" HorizontalAlignment="Left" Height="25" Width="25" VerticalAlignment="Top"  Background="Black" Margin="485,182,0,0" />
+        <Label Content="is 'α' times 'β' higher than 10 XOR 'α' and 'β' even?" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="223,182,0,0" />
+    </Grid>
+</Window>
